@@ -1,0 +1,2 @@
+# EntityFremoworkAndCodeFirst
+Some tasks
