@@ -1,0 +1,12 @@
+c:\users\tanya\documents\visual studio 2015\Projects\Products\ProductsShop.Models\bin\Debug\ProductsShop.Models.dll.config
+c:\users\tanya\documents\visual studio 2015\Projects\Products\ProductsShop.Models\bin\Debug\ProductsShop.Models.dll
+c:\users\tanya\documents\visual studio 2015\Projects\Products\ProductsShop.Models\bin\Debug\ProductsShop.Models.pdb
+c:\users\tanya\documents\visual studio 2015\Projects\Products\ProductsShop.Models\bin\Debug\EntityFramework.dll
+c:\users\tanya\documents\visual studio 2015\Projects\Products\ProductsShop.Models\bin\Debug\EntityFramework.SqlServer.dll
+c:\users\tanya\documents\visual studio 2015\Projects\Products\ProductsShop.Models\bin\Debug\Newtonsoft.Json.dll
+c:\users\tanya\documents\visual studio 2015\Projects\Products\ProductsShop.Models\bin\Debug\EntityFramework.xml
+c:\users\tanya\documents\visual studio 2015\Projects\Products\ProductsShop.Models\bin\Debug\EntityFramework.SqlServer.xml
+c:\users\tanya\documents\visual studio 2015\Projects\Products\ProductsShop.Models\bin\Debug\Newtonsoft.Json.xml
+c:\users\tanya\documents\visual studio 2015\Projects\Products\ProductsShop.Models\obj\Debug\ProductsShop.Models.csprojResolveAssemblyReference.cache
+c:\users\tanya\documents\visual studio 2015\Projects\Products\ProductsShop.Models\obj\Debug\ProductsShop.Models.dll
+c:\users\tanya\documents\visual studio 2015\Projects\Products\ProductsShop.Models\obj\Debug\ProductsShop.Models.pdb
