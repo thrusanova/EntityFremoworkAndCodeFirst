@@ -13,9 +13,36 @@ namespace ProductsShop.Query
         static void Main(string[] args)
         {
             var context = new ProductsShopContext();
-          ExportProductsInRange(context);
-            ExportProductsCategory(context);
+             ExportProductsInRange(context);
+             ExportProductsCategory(context);
+             ExportSoldProducts(context);
+             ExportUsersAndProducts(context);
 
+        }
+
+        private static void ExportUsersAndProducts(ProductsShopContext context)
+        {
+            throw new NotImplementedException();
+        }
+
+        private static void ExportSoldProducts(ProductsShopContext context)
+        {
+            var users = context.Users.Where(u => u.ProductsSold.Count(pr => pr.Buyer != null) != 0)
+               .OrderBy(u => u.FirstName).ThenBy(u => u.LastName).
+               Select(user => new
+               {
+                   user.FirstName,
+                   user.LastName,
+                   soldProducts = user.ProductsSold.Select(p => new
+                   {
+                       p.Name,
+                       p.Price,
+                       buyerFName=p.Buyer.FirstName,
+                       buyerLName=p.Buyer.LastName
+                   })
+               });
+            var usersAsJson = JsonConvert.SerializeObject(users, Formatting.Indented);
+            File.WriteAllText("..//..//..//ExportedFiles//users-sold-products.json", usersAsJson);
         }
 
         private static void ExportProductsCategory(ProductsShopContext context)
