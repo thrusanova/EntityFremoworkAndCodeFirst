@@ -22,7 +22,22 @@ namespace ProductsShop.Query
 
         private static void ExportUsersAndProducts(ProductsShopContext context)
         {
-            throw new NotImplementedException();
+
+            var users = context.Users.Where(user => user.ProductsSold.Count != 0)
+                .OrderByDescending(p => p.ProductsSold.Count).ThenBy(u => u.LastName)
+                .Select(user => new
+                {
+                    FName=user.FirstName,
+                    LName=user.LastName,
+                    age=user.Age,
+                    soldProducts = user.ProductsSold.Select(p =>new
+                    {
+                        p.Name,
+                        p.Price
+                    })
+                });
+            var userASJson = JsonConvert.SerializeObject(users, Formatting.Indented);
+            File.WriteAllText("..//..//..//ExportedFiles//users-and-products.json", userASJson);
         }
 
         private static void ExportSoldProducts(ProductsShopContext context)
