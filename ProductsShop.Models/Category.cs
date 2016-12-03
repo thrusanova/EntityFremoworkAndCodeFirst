@@ -1,6 +1,7 @@
 ﻿
 namespace ProductsShop.Models
 {
+    using Newtonsoft.Json;
     using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
 
@@ -16,6 +17,7 @@ namespace ProductsShop.Models
         [MinLength(3),MaxLength(15)]
         public string Name { get; set; }
 
+        [JsonIgnore]
         public virtual ICollection<Product>Products { get; set; }
     }
 }

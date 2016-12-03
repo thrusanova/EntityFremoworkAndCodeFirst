@@ -1,4 +1,5 @@
 ﻿
+
 namespace ProductsShop.Client
 {
     using Models;
@@ -26,10 +27,7 @@ namespace ProductsShop.Client
             var context = new ProductsShopContext();
             var json = File.ReadAllText(usersPath);
             var userEntity = JsonConvert.DeserializeObject<IEnumerable<User>>(json);
-            foreach (var user in userEntity)
-            {
-                context.Users.Add(user);
-            }
+            context.Users.AddRange(userEntity);
             context.SaveChanges();
 
         }
@@ -39,10 +37,18 @@ namespace ProductsShop.Client
             var context = new ProductsShopContext();
             var json = File.ReadAllText(categoriesPath);
             var categoryEntity = JsonConvert.DeserializeObject<IEnumerable<Category>>(json);
-            foreach (var category in categoryEntity)
+            int countOfProducts = context.Products.Count();
+            Random rnd = new Random();
+            foreach (Category category in categoryEntity)
             {
-                context.Categories.Add(category);
+                for (int i = 0; i < countOfProducts / 3; i++)
+                {
+                    Product product = context.Products.Find(rnd.Next(1, countOfProducts + 1));
+                    category.Products.Add(product);
+                }
             }
+
+            context.Categories.AddRange(categoryEntity);
             context.SaveChanges();
         }
 
@@ -56,13 +62,13 @@ namespace ProductsShop.Client
             {
                 double shouldHaveBuyer = rand.NextDouble();
                 product.SellerId = rand.Next(1, context.Users.Count() + 1);
-                if (shouldHaveBuyer<=0.7)
+                if (shouldHaveBuyer <= 0.7)
                 {
                     product.BuyerId = rand.Next(1, context.Users.Count() + 1);
                 }
-                context.Products.Add(product);
             }
-            context.SaveChanges();
+            context.Products.AddRange(productEntity);
+                context.SaveChanges();
             
         }
     }

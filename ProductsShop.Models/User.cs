@@ -1,6 +1,7 @@
 ﻿
 namespace ProductsShop.Models
 {
+    using Newtonsoft.Json;
     using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
     using System.ComponentModel.DataAnnotations.Schema;
@@ -9,7 +10,7 @@ namespace ProductsShop.Models
     {
         public User()
         {
-            this.ProductBought = new HashSet<Product>();
+            this.ProductsBought = new HashSet<Product>();
             this.ProductsSold = new HashSet<Product>();
             this.Friends = new HashSet<User>();
         }
@@ -24,13 +25,16 @@ namespace ProductsShop.Models
 
         public int? Age { get; set; }
 
+        [JsonIgnore]
+        public virtual ICollection<User> Friends { get; set; }
+
+        [JsonIgnore]
         [InverseProperty("Seller")]
-        public virtual ICollection<Product>ProductsSold { get; set; }
+        public virtual ICollection<Product> ProductsSold { get; set; }
 
+        [JsonIgnore]
         [InverseProperty("Buyer")]
-        public virtual ICollection<Product>ProductBought { get; set; }
-
-        public virtual ICollection<User>Friends { get; set; }
+        public virtual ICollection<Product> ProductsBought { get; set; }
 
 
     }

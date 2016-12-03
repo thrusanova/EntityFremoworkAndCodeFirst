@@ -11,12 +11,13 @@ namespace ProductsShop.Data
         {
         }
 
-        public virtual IDbSet<User>Users { get; set; }
-        public virtual IDbSet<Product>Products { get; set; }
-        public virtual IDbSet<Category>Categories { get; set; }
+        public virtual DbSet<User>Users { get; set; }
+        public virtual DbSet<Product>Products { get; set; }
+        public virtual DbSet<Category>Categories { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
+         
             modelBuilder.Entity<User>()
                 .HasMany(user => user.Friends)
                 .WithMany()

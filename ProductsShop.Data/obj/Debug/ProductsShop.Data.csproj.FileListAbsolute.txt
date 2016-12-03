@@ -10,3 +10,5 @@ c:\users\tanya\documents\visual studio 2015\Projects\Products\ProductsShop.Data\
 c:\users\tanya\documents\visual studio 2015\Projects\Products\ProductsShop.Data\obj\Debug\ProductsShop.Data.csprojResolveAssemblyReference.cache
 c:\users\tanya\documents\visual studio 2015\Projects\Products\ProductsShop.Data\obj\Debug\ProductsShop.Data.dll
 c:\users\tanya\documents\visual studio 2015\Projects\Products\ProductsShop.Data\obj\Debug\ProductsShop.Data.pdb
+C:\Users\tanya\Documents\Visual Studio 2015\Projects\Products\ProductsShop.Data\bin\Debug\Newtonsoft.Json.dll
+C:\Users\tanya\Documents\Visual Studio 2015\Projects\Products\ProductsShop.Data\bin\Debug\Newtonsoft.Json.xml
