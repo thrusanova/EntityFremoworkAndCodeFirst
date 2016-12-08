@@ -18,6 +18,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductsShop.Client", "Prod
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductsShop.Query", "ProductsShop.Query\ProductsShop.Query.csproj", "{04F55596-FACC-42BC-86C4-AB044152B4F4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductsShopExportXMl", "ProductsShopExportXMl\ProductsShopExportXMl.csproj", "{801AD1B6-B4EE-469D-8E42-256887F61F36}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -40,6 +42,10 @@ Global
 		{04F55596-FACC-42BC-86C4-AB044152B4F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{04F55596-FACC-42BC-86C4-AB044152B4F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{04F55596-FACC-42BC-86C4-AB044152B4F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{801AD1B6-B4EE-469D-8E42-256887F61F36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{801AD1B6-B4EE-469D-8E42-256887F61F36}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{801AD1B6-B4EE-469D-8E42-256887F61F36}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{801AD1B6-B4EE-469D-8E42-256887F61F36}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

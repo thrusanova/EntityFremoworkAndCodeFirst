@@ -1,0 +1,16 @@
+C:\Users\tanya\Documents\Visual Studio 2015\Projects\Products\ProductsShopExportXMl\bin\Debug\ProductsShopExportXMl.exe.config
+C:\Users\tanya\Documents\Visual Studio 2015\Projects\Products\ProductsShopExportXMl\bin\Debug\ProductsShopExportXMl.exe
+C:\Users\tanya\Documents\Visual Studio 2015\Projects\Products\ProductsShopExportXMl\bin\Debug\ProductsShopExportXMl.pdb
+C:\Users\tanya\Documents\Visual Studio 2015\Projects\Products\ProductsShopExportXMl\bin\Debug\EntityFramework.dll
+C:\Users\tanya\Documents\Visual Studio 2015\Projects\Products\ProductsShopExportXMl\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\tanya\Documents\Visual Studio 2015\Projects\Products\ProductsShopExportXMl\bin\Debug\ProductsShop.Data.dll
+C:\Users\tanya\Documents\Visual Studio 2015\Projects\Products\ProductsShopExportXMl\bin\Debug\ProductsShop.Models.dll
+C:\Users\tanya\Documents\Visual Studio 2015\Projects\Products\ProductsShopExportXMl\bin\Debug\Newtonsoft.Json.dll
+C:\Users\tanya\Documents\Visual Studio 2015\Projects\Products\ProductsShopExportXMl\bin\Debug\ProductsShop.Data.pdb
+C:\Users\tanya\Documents\Visual Studio 2015\Projects\Products\ProductsShopExportXMl\bin\Debug\ProductsShop.Models.pdb
+C:\Users\tanya\Documents\Visual Studio 2015\Projects\Products\ProductsShopExportXMl\bin\Debug\EntityFramework.xml
+C:\Users\tanya\Documents\Visual Studio 2015\Projects\Products\ProductsShopExportXMl\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\tanya\Documents\Visual Studio 2015\Projects\Products\ProductsShopExportXMl\bin\Debug\Newtonsoft.Json.xml
+C:\Users\tanya\Documents\Visual Studio 2015\Projects\Products\ProductsShopExportXMl\obj\Debug\ProductsShopExportXMl.csprojResolveAssemblyReference.cache
+C:\Users\tanya\Documents\Visual Studio 2015\Projects\Products\ProductsShopExportXMl\obj\Debug\ProductsShopExportXMl.exe
+C:\Users\tanya\Documents\Visual Studio 2015\Projects\Products\ProductsShopExportXMl\obj\Debug\ProductsShopExportXMl.pdb
